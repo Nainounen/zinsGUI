@@ -22,8 +22,8 @@ namespace zinsGUI
 
             for (int Jahr = 1; Jahr <= Jahrezuberchnen; Jahr++)
             {
-                Zwischenzahl = Startkapital / Zinsatz;
-                Startkapital = Startkapital - Zwischenzahl;
+                Zwischenzahl = Startkapital * Zinsatz;
+                Startkapital = Startkapital + Zwischenzahl;
                 LblAusgabe.Text += ($"Jahr {Jahr}: Kapital = {Startkapital:C2}\n");
         }
         }
